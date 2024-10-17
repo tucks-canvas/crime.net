@@ -1,24 +1,31 @@
 package com.example.crimenet
 
 import android.os.Bundle
-import android.os.Looper
-import android.util.Log
 import android.widget.Button
-import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import android.app.Activity
+import android.content.Intent
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var usernameInput : EditText
-    private lateinit var passwordInput : EditText
-    private lateinit var loginBtn : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        val sign_button = findViewById<Button>(R.id.signupbutton)
+        sign_button.setOnClickListener {
+            val Intent = Intent(this,SignUp::class.java)
+            startActivity(Intent)
+        }
+
+        val signInText = findViewById<TextView>(R.id.textsignin)
+
+        // Set an OnClickListener to open SignIn activity
+        signInText.setOnClickListener {
+            val intent2 = Intent(this, Login::class.java)
+            startActivity(intent2)
+        }
     }
 }
