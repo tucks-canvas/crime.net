@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">CrimeNet</string>
+    <string name="welcome_text">Welcome to</string>
+    <string name="crime">Crime.</string>
+    <string name="net">net</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="name2">Full Name</string>
+    <string name="pass">Password</string>
+    <string name="pass2">Re-enter Password</string>
+    <string name="rem">Remember Me</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="sutxt">Dont have an account?</string>
+    <string name="sutxt2">Already have an account?</string>
+    <string name="sign">Sign Up</string>
+    <string name="sign2">Sign In</string>
+    <string name="reset">Reset</string>
+    <string name="fullstop">.</string>
+    <string name="login">Login</string>
+    <string name="siu">or sign in with</string>
+    <string name="confirm">Confirm Password</string>
+    <string name="rec">Password Recovery</string>
+    <string name="recnotes">Please insert the email you used to sign up </string>
+    <string name="recnotes2">Please insert a new password for your account </string>
+    <string name="with">with</string>
+    <string name="on">on</string>
+    <string name="next">Next</string>
+
+
+</resources>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/wix_madefor_display"
+        android:text="@string/welcome_text"
+        android:textColor="#94DEA5"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="@string/net"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/crime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/crime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="@string/crime"
+        android:textColor="#ffffff"
+        android:textSize="55sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <EditText
+        android:id="@+id/namebox"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="68dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/rounded_corner"
+        android:hint="@string/name2"
+        android:inputType="textEmailAddress"
+        android:padding="18dp"
+        android:textColorHint="#808080"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/crime" />
+
+    <TextView
+        android:id="@+id/txtemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/wix_madefor_display"
+        android:text="@string/email"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/emailbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textname" />
+
+    <TextView
+        android:id="@+id/txtpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/wix_madefor_display"
+        android:text="@string/pass"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/passbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailbox"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:fontFamily="@font/wix_madefor_display"
+        android:text="@string/confirm"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/confirmpass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passbox"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <TextView
+        android:id="@+id/textrememberme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="212dp"
+        android:fontFamily="@font/wix_madefor_display"
+        android:text="@string/rem"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/loginbutton"
+        app:layout_constraintEnd_toEndOf="@+id/mySwitchCompat"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmpass" />
+
+    <TextView
+        android:id="@+id/txtsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/wix_madefor_display"
+        android:text="@string/sutxt2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <EditText
+        android:id="@+id/emailbox"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="52dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/rounded_corner"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="18dp"
+        android:textColorHint="#808080"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namebox" />
+
+    <EditText
+        android:id="@+id/passbox"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="52dp"
+        android:autofillHints="password"
+        android:background="@drawable/rounded_corner"
+        android:hint="@string/pass"
+        android:inputType="textPassword"
+        android:padding="18dp"
+        android:textColorHint="#808080"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailbox" />
+
+    <EditText
+        android:id="@+id/confirmpass"
+        android:layout_width="334dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="52dp"
+        android:autofillHints="password"
+        android:background="@drawable/rounded_corner"
+        android:hint="@string/pass2"
+        android:inputType="textPassword"
+        android:padding="18dp"
+        android:textColorHint="#808080"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passbox" />
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/wix_madefor_display"
+        android:text="@string/name"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/crime" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="@font/montserrat_alternates_semibold"
+        android:text="@string/sign2"
+        android:textColor="#94DEA5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="320dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="124dp"
+        android:backgroundTint="@color/material_dynamic_neutral20"
+        android:text="@string/sign"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmpass"
+        tools:visibility="visible" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/mySwitchCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="39dp"
+        android:backgroundTint="@color/material_dynamic_neutral20"
+        android:buttonTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/loginbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/confirmpass" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

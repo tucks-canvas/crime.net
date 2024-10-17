@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "crime.net"
+rootProject.name = "CrimeNet"
 include(":app")
