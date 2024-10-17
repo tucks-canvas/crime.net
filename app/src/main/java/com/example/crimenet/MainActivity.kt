@@ -20,17 +20,5 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        usernameInput = findViewById(R.id.editTextTextEmailAddress)
-        passwordInput = findViewById(R.id.editTextTextPassword)
-        loginBtn = findViewById(R.id.loginbutton)
-
-        loginBtn.setOnClickListener{
-            val username =usernameInput.text.toString()
-            val password =passwordInput.text.toString()
-
-            Log.i("Test Credentials", "Username: $username and Password : $password")
-
-        }
-
     }
 }
