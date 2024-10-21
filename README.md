@@ -1,6 +1,6 @@
 # Crime.net
 
-The _**Crime.net** _ is a mobile application with the aim of imploring safe navigation to users to the and from their location of choice, in keeping with routes that will curate the safest travel path in the shortest amount of time possible.
+The **Crime.net** is a mobile application with the aim of imploring safe navigation to users to the and from their location of choice, in keeping with routes that will curate the safest travel path in the shortest amount of time possible.
 
 The projects members consists of front-end developers: 
 1. **D'Janae Patterson**,
